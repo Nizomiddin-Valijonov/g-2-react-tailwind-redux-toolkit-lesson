@@ -97,7 +97,7 @@ const productSlice = createSlice({
   name: "product",
   initialState,
   reducers: {
-    addProduct: (state) => {
+    addProduct: (state, action) => {
       console.log(state);
     },
   },

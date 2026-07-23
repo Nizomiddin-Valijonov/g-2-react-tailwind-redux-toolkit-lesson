@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 function RootLayout() {
   return (
-    <div className="container">
+    <div className="container min-h-screen">
       <Navbar />
 
       <Outlet />

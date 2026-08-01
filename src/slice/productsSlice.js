@@ -91,18 +91,20 @@ const initialState = {
       },
     },
   ],
+  cart: [],
 };
 
 const productSlice = createSlice({
   name: "product",
   initialState,
   reducers: {
-    addProduct: (state, action) => {
-      console.log(state);
+    addProductToCard: (state, action) => {
+      state = { ...state, cart: [...state.cart, action.payload] };
+      return state;
     },
   },
 });
 
-export const { addProduct } = productSlice.actions;
+export const { addProductToCard } = productSlice.actions;
 
 export default productSlice.reducer;

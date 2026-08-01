@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import FormPage from "./pages/FormPage";
 import Pomodoro from "./pages/Pomodoro";
 import "./App.css";
+import CartPage from "./pages/CartPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -25,6 +26,10 @@ function App() {
         {
           path: "/pomodoro",
           element: <Pomodoro />,
+        },
+        {
+          path: "/cart",
+          element: <CartPage />,
         },
       ],
     },
